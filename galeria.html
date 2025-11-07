@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - ArtDrive</title>
+    <!--favicon-->
+    <script src="js/favicon.js"></script>
+    <!--css-->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="imagenes/logo.png" alt="Logo ArtDrive"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="mostrar-submenu">
+                    <a href="#">Páginas <span class="flecha">&#9662;</span></a>
+                    <ul class="submenu">
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="equipo.html">Equipo</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="galeria-preview">
+            <div class="contenedor-texto">
+                <h2>Galería de obras</h2>
+                <p>Una pequeña muestra del universo visual de <strong>ArtDrive</strong>: ilustraciones digitales, retratos conceptuales 
+                y exploraciones de estilo que combinan técnica, emoción y experimentación artística.</p>
+            </div>
+
+            <div class="galeria-grid">
+                <div class="galeria-item"><img src="imagenes/pixel6.png" alt="Obra 1"></div>
+                <div class="galeria-item"><img src="imagenes/boceto2.png" alt="Obra 2"></div>
+                <div class="galeria-item"><img src="imagenes/boceto3.png" alt="Obra 3"></div>
+                <div class="galeria-item"><img src="imagenes/pixel4.png" alt="Obra 4"></div>
+                <div class="galeria-item"><img src="imagenes/render2.png" alt="Obra 5"></div>
+                <div class="galeria-item"><img src="imagenes/boceto1.png" alt="Obra 6"></div>
+                <div class="galeria-item"><img src="imagenes/pixel5.png" alt="Obra 7"></div>
+                <div class="galeria-item"><img src="imagenes/render1.png" alt="Obra 8"></div>
+            </div>
+        </section>
+
+
+        <section class="categorias">
+            <h2>Ver categorías</h2>
+            <div class="categorias-grid">
+                <a href="ilustracion_digital.html" class="categoria">
+                    <div class="categoria">
+                        <img src="imagenes/render1.png" alt="Ilustración Digital">
+                        <h3>Ilustración Digital</h3>
+                    </div>
+                </a>
+                <a href="pixel_art.html" class="categoria">
+                    <div class="categoria">
+                        <img src="imagenes/pixel2.png" alt="Pixel Art">
+                        <h3>Pixel Art</h3>
+                    </div>
+                </a>
+                <a href="bocetos.html" class="categoria">
+                    <div class="categoria">
+                        <img src="imagenes/boceto3.png" alt="Bocetos">
+                        <h3>Bocetos</h3>
+                    </div>
+                </a>
+                <a href="arte_conceptual.html" class="categoria">
+                    <div class="categoria">
+                        <img src="imagenes/concepto1.png" alt="Arte Conceptual">
+                        <h3>Arte Conceptual</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contenido">
+            <div class="footer-col">
+                <h3 class="footer-logo">ArtDrive</h3>
+                <p>Un espacio dedicado al arte digital, la experimentación y la emoción visual.</p>
+                <div class="logo">
+                    <a href="index.html"><img src="imagenes/logo.png" alt="Logo ArtDrive"></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="equipo.html">Equipo</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                    <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Sígueme</h4>
+                <div class="footer-social">
+                    <a href="#">Instagram</a>
+                    <a href="#">X</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copy">
+            <p>&copy; <span id="year"></span> | ArtDrive</p>
+        </div>
+    </footer>
+    
+    <button id="btnTop" title="Volver arriba">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
