@@ -1,15 +1,12 @@
 $(document).ready(function () {
-    //SLIDER
     const slides = $('.slides');
-    const imgs = $('.slides img');
-    const total = imgs.length;
+    const total = $('.slide').length;
 
-    // Clonar la primera imagen para crear loop infinito
-    const firstClone = imgs.eq(0).clone();
-    slides.append(firstClone);
+    // Clonar la primera slide
+    slides.append($('.slide').eq(0).clone());
 
     let index = 0;
-    const slideWidth = 100; // cada imagen ocupa 100%
+    const slideWidth = 100;
     let slideInterval;
 
     function cambiarSlide() {
@@ -35,19 +32,12 @@ $(document).ready(function () {
         clearInterval(slideInterval);
     }
 
-    // Inicia al cargar
     iniciarSlider();
 
-    // REINICIO AUTOMÁTICO TRAS SUSPENSIÓN O INACTIVIDAD
     document.addEventListener('visibilitychange', function () {
-        if (document.visibilityState === 'visible') {
-            iniciarSlider();
-        } else {
-            detenerSlider();
-        }
+        document.visibilityState === 'visible' ? iniciarSlider() : detenerSlider();
     });
 
-    // También si la ventana gana o pierde el foco (ej. suspensión del PC)
     window.addEventListener('focus', iniciarSlider);
     window.addEventListener('blur', detenerSlider);
 });
