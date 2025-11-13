@@ -461,6 +461,14 @@ main {
   background-image: url('../imagenes/muna.svg');
 }
 
+.parallax-4 .parallax-content h2{
+  color: var(--blue--);
+}
+
+.parallax-4 .parallax-content p{
+  font-family: var(--font-body--);
+}
+
 /* GALERIA */
 .galeria-preview, .galeria-categoria {
   padding: 6rem 5%;
