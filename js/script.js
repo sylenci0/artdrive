@@ -84,3 +84,42 @@ document.querySelectorAll('.faq-question').forEach(question => {
         }
     });
 });
+
+const menuToggle = document.getElementById("menu-toggle");
+const navUl = document.querySelector("nav ul");
+
+// Abrir/cerrar menú principal
+menuToggle.addEventListener("click", () => {
+  menuToggle.classList.toggle("active");
+  navUl.classList.toggle("active");
+
+  document.body.style.overflow = navUl.classList.contains("active") ? "hidden" : "auto";
+});
+
+// Cerrar menú si se hace click fuera
+document.addEventListener("click", (e) => {
+  if (!navUl.contains(e.target) && !menuToggle.contains(e.target)) {
+    navUl.classList.remove("active");
+    menuToggle.classList.remove("active");
+    document.body.style.overflow = "auto";
+
+    // cerrar todos los submenús abiertos
+    document.querySelectorAll("nav ul li.has-submenu").forEach((li) => li.classList.remove("open"));
+  }
+});
+
+// Manejo de submenús
+const submenus = document.querySelectorAll("nav ul li.has-submenu");
+
+submenus.forEach((item) => {
+  const toggle = item.querySelector("a"); // enlace principal del li
+  toggle.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    // Si quieres que se cierre cualquier otro submenú abierto, descomenta esto:
+    // submenus.forEach((other) => { if(other !== item) other.classList.remove("open"); });
+
+    // Toggle del propio submenú
+    item.classList.toggle("open");
+  });
+});

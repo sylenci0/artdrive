@@ -14,6 +14,7 @@
         <div class="logo">
             <a href="index.html"><img src="imagenes/logo.png" alt="Logo ArtDrive"></a>
         </div>
+        <div class="menu-toggle" id="menu-toggle"></div>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -25,7 +26,7 @@
                         <li><a href="faq.html">FAQ</a></li>
                     </ul>
                 </li>
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
@@ -35,43 +36,60 @@
         <section class="blog-section">
             <h2>Blog ArtDrive</h2>
             <p>
-            Aquí comparto ideas, procesos creativos y reflexiones sobre arte digital,
-            diseño y tecnología. Cada publicación es una parte de mi viaje artístico.
+                Aquí comparto ideas, procesos creativos y reflexiones sobre arte digital,
+                diseño y tecnología. Cada publicación es una parte de mi viaje artístico.
             </p>
 
             <div class="blog-grid">
-            <article class="blog-card">
-                <img src="img/blog1.jpg" alt="Proceso creativo" />
-                <div class="blog-content">
-                <h3>El proceso detrás de una ilustración</h3>
-                <p>
-                    Desde la idea inicial hasta el render final, te muestro cómo transformo una inspiración en una obra completa.
-                </p>
-                <a href="#" class="btn-read">Leer más</a>
-                </div>
-            </article>
+                <article class="blog-card">
+                    <img src="imagenes/sketchbook.jpg" alt="Sketchbook abierto con bocetos" loading="lazy"/>
+                    <div class="blog-content">
+                        <h3>El valor del Sketchbook</h3>
+                        <p>
+                            Un espacio donde el arte fluye sin reglas ni juicios. 
+                            En el sketchbook, las ideas germinan, los errores se vuelven descubrimientos 
+                            y cada trazo es parte del proceso creativo más puro.
+                        </p>
+                        <a href="blog_sketchbook.html" class="btn-read">Leer más</a>
+                    </div>
+                </article>
 
-            <article class="blog-card">
-                <img src="img/blog2.jpg" alt="Inspiración artística" />
-                <div class="blog-content">
-                <h3>Inspiración en lo cotidiano</h3>
-                <p>
-                    A veces la mejor inspiración no viene de internet, sino de los detalles simples que te rodean.
-                </p>
-                <a href="#" class="btn-read">Leer más</a>
-                </div>
-            </article>
+                <article class="blog-card">
+                    <img src="imagenes/ia.jpg" alt="IA y dibujo artístico" loading="lazy"/>
+                    <div class="blog-content">
+                        <h3>La IA y su impacto en los dibujantes</h3>
+                        <p>
+                            La inteligencia artificial está transformando el mundo del arte. 
+                            ¿Es una amenaza o una nueva herramienta creativa?
+                        </p>
+                        <a href="ia_dibujo.html" class="btn-read">Leer más</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <img src="imagenes/bloqueo.jpg" alt="Creatividad artística" loading="lazy"/>
+                    <div class="blog-content">
+                        <h3>Qué hacer cuando no sabes qué dibujar</h3>
+                        <p>
+                            ¿Te quedaste sin ideas? Descubre cómo recuperar la inspiración y volver a disfrutar del proceso creativo.
+                        </p>
+                        <a href="creatividad_y_bloqueo.html" class="btn-read">Leer más</a>
+                    </div>
+                </article>
 
-            <article class="blog-card">
-                <img src="img/blog3.jpg" alt="Técnicas digitales" />
-                <div class="blog-content">
-                <h3>Jugar con luces y sombras digitales</h3>
-                <p>
-                    Cómo utilizo diferentes pinceles y capas de luz para crear profundidad sin perder el estilo.
-                </p>
-                <a href="#" class="btn-read">Leer más</a>
-                </div>
-            </article>
+                <article class="blog-card">
+                    <img src="imagenes/tipos_pintura.jpg" alt="Pintura tradicional" loading="lazy"/>
+                    <div class="blog-content">
+                        <h3>Tipos de pintura artística tradicional</h3>
+                        <p>
+                            La pintura tradicional ofrece distintas técnicas para expresar emociones:
+                            el acrílico y su secado veloz, el óleo con su riqueza cromática,
+                            la transparencia de la acuarela y la textura artesanal del temple.
+                            Cuatro estilos, una sola pasión: el arte.
+                        </p>
+                        <a href="pintura_tradicional.html" class="btn-read">Leer más</a>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
@@ -82,7 +100,7 @@
                 <h3 class="footer-logo">ArtDrive</h3>
                 <p>Un espacio dedicado al arte digital, la experimentación y la emoción visual.</p>
                 <div class="logo">
-                    <a href="index.html"><img src="imagenes/logo.png" alt="Logo ArtDrive"></a>
+                    <a href="index.html"><img src="imagenes/logo.png" alt="Logo ArtDrive" loading="lazy"></a>
                 </div>
             </div>
 
@@ -99,10 +117,10 @@
             </div>
 
             <div class="footer-col">
-                <h4>Sígueme</h4>
+                <h4>Más sobre mí</h4>
                 <div class="footer-social">
-                    <a href="#">Instagram</a>
-                    <a href="#">X</a>
+                    <a href="https://www.linkedin.com/in/silviaapariciotoledo/">LinkedIn</a>
+                    <a href="https://linktr.ee/SilviaAparicioT">Linktree</a>
                 </div>
             </div>
         </div>
@@ -120,6 +138,6 @@
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

@@ -17,11 +17,12 @@
             <div class="logo">
                 <a href="index.html"><img src="imagenes/logo.png" alt="Logo ArtDrive"></a>
             </div>
+            <div class="menu-toggle" id="menu-toggle"></div>
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li class="mostrar-submenu">
-                        <a href="#">Páginas <span class="flecha">&#9662;</span></a>
+                        <a href="#">Páginas <span>&#9662;</span></a>
                         <ul class="submenu">
                             <li><a href="galeria.html">Galería</a></li>
                             <li><a href="equipo.html">Equipo</a></li>
@@ -37,21 +38,21 @@
         <div class="banner">
             <div class="slides">
                 <div class="slide" onclick="location.href='galeria.html'">
-                    <img src="imagenes/slider2.jpeg" alt="Imagen 1">
+                    <img src="imagenes/slider2.svg" alt="Imagen 1">
                     <div class="slide-text">
                         <h2>Explora mi universo visual</h2>
                     </div>
                 </div>
 
                 <div class="slide" onclick="location.href='equipo.html'">
-                    <img src="imagenes/muna.jpeg" alt="Imagen 2">
+                    <img src="imagenes/muna.svg" alt="Imagen 2" loading="lazy">
                     <div class="slide-text">
                         <h2>Detrás del arte</h2>
                     </div>
                 </div>
 
                 <div class="slide" onclick="location.href='contacto.html'">
-                    <img src="imagenes/slider.png" alt="Imagen 3">
+                    <img src="imagenes/slider.svg" alt="Imagen 3" loading="lazy">
                     <div class="slide-text">
                         <h2>Conecta conmigo</h2>
                     </div>
@@ -87,25 +88,25 @@
                 <div class="categorias-grid">
                     <a href="ilustracion_digital.html" class="categoria">
                         <div class="categoria">
-                            <img src="imagenes/render1.png" alt="Ilustración Digital">
+                            <img src="imagenes/render1.png" alt="Ilustración Digital" loading="lazy">
                             <h3>Ilustración Digital</h3>
                         </div>
                     </a>
                     <a href="pixel_art.html" class="categoria">
                         <div class="categoria">
-                            <img src="imagenes/pixel2.png" alt="Pixel Art">
+                            <img src="imagenes/pixel2.png" alt="Pixel Art" loading="lazy">
                             <h3>Pixel Art</h3>
                         </div>
                     </a>
                     <a href="bocetos.html" class="categoria">
                         <div class="categoria">
-                            <img src="imagenes/boceto3.png" alt="Bocetos">
+                            <img src="imagenes/boceto3.png" alt="Bocetos" loading="lazy">
                             <h3>Bocetos</h3>
                         </div>
                     </a>
                     <a href="arte_conceptual.html" class="categoria">
                         <div class="categoria">
-                            <img src="imagenes/concepto1.png" alt="Arte Conceptual">
+                            <img src="imagenes/concepto1.png" alt="Arte Conceptual" loading="lazy">
                             <h3>Arte Conceptual</h3>
                         </div>
                     </a>
@@ -133,6 +134,33 @@
                     Reflexiones, procesos creativos, bocetos inéditos y novedades del mundo digital.
                     Visita el <a href="blog.html">Blog</a> para descubrir más.
                 </p>
+
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <img src="imagenes/sketchbook.jpg" alt="Sketchbook abierto con bocetos" loading="lazy"/>
+                        <div class="blog-content">
+                            <h3>El valor del Sketchbook</h3>
+                            <p>
+                                Un espacio donde el arte fluye sin reglas ni juicios. 
+                                En el sketchbook, las ideas germinan, los errores se vuelven descubrimientos 
+                                y cada trazo es parte del proceso creativo más puro.
+                            </p>
+                            <a href="blog_sketchbook.html" class="btn-read">Leer más</a>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <img src="imagenes/ia.jpg" alt="IA y dibujo artístico" loading="lazy"/>
+                        <div class="blog-content">
+                            <h3>La IA y su impacto en los dibujantes</h3>
+                            <p>
+                                La inteligencia artificial está transformando el mundo del arte. 
+                                ¿Es una amenaza o una nueva herramienta creativa?
+                            </p>
+                            <a href="ia_dibujo.html" class="btn-read">Leer más</a>
+                        </div>
+                    </article>
+                </div>
             </section>
         </main>
 
@@ -142,7 +170,7 @@
                     <h3 class="footer-logo">ArtDrive</h3>
                     <p>Un espacio dedicado al arte digital, la experimentación y la emoción visual.</p>
                     <div class="logo">
-                        <a href="index.html"><img src="imagenes/logo.png" alt="Logo ArtDrive"></a>
+                        <a href="index.html"><img src="imagenes/logo.png" alt="Logo ArtDrive" loading="lazy"></a>
                     </div>
                 </div>
 
@@ -159,10 +187,10 @@
                 </div>
 
                 <div class="footer-col">
-                    <h4>Sígueme</h4>
+                    <h4>Más sobre mi</h4>
                     <div class="footer-social">
-                        <a href="#">Instagram</a>
-                        <a href="#">X</a>
+                        <a href="https://www.linkedin.com/in/silviaapariciotoledo/">LinkedIn</a>
+                        <a href="https://linktr.ee/SilviaAparicioT">Linktree</a>
                     </div>
                 </div>
             </div>
@@ -181,7 +209,7 @@
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/loader.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/loader.js" defer></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
