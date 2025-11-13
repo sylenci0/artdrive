@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - ArtDrive</title>
+    <title>Política de Privacidad - ArtDrive</title>
     <!-- URL canónica -->
-    <link rel="canonical" href="https://sylenci0.github.io/ArtDrive/contacto.html" />
+    <link rel="canonical" href="https://sylenci0.github.io/ArtDrive/politica_privacidad.html" />
     <!--favicon-->
     <script src="js/favicon.js"></script>
     <!--css-->
@@ -35,40 +35,24 @@
     </header>
 
     <main>
-        <section class="intro">
-            <h1>Contacto</h1>
-            <p>Si tienes alguna duda o simplemente te apetece charlar sobre arte digital, ¡me encantará leerte!</p>
-        </section>
+        <section class="legal-section">
+            <h1>Política de Privacidad</h1>
+            <p>
+            En <strong>ArtDrive</strong> respetamos tu privacidad y nos comprometemos a proteger tus datos personales.
+            Este documento explica cómo recopilamos, usamos y protegemos tu información.
+            </p>
 
-        <section class="contacto-form">
-            <div class="form-contenedor">
-                <h2>Envíame un mensaje</h2>
-                <form id="formContacto" action="#" method="post">
-                    <div class="campo">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" required>
-                    </div>
-                    <div class="campo">
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="campo">
-                        <label for="asunto">Asunto</label>
-                        <input type="text" id="asunto" name="asunto" required>
-                    </div>
-                    <div class="campo">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" name="mensaje" rows="6" maxlength="500" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-muna">Enviar mensaje</button>
-                </form>
-            </div>
-        </section>
+            <h2>Datos Recopilados</h2>
+            <p>
+            Podemos recopilar datos como tu nombre, correo electrónico y mensajes cuando utilizas nuestro formulario de contacto.
+            </p>
 
-        <p class="info-legal">
-            Consulta nuestro <a href="aviso_legal.html">Aviso Legal</a> y nuestra 
-            <a href="politica_privacidad.html">Política de Privacidad</a>.
-        </p>
+            <h2>Uso de los Datos</h2>
+            <p>
+            Tus datos se emplean exclusivamente para responder a tus consultas o solicitudes.
+            No compartimos tu información con terceros sin tu consentimiento.
+            </p>
+        </section>
     </main>
     
     <footer>
@@ -116,12 +100,5 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/script.js" defer></script>
-    <script>
-        document.getElementById("formContacto").addEventListener("submit", function(event) {
-        event.preventDefault();
-        alert("Mensaje enviado correctamente");
-        this.reset();
-        });
-    </script>
 </body>
 </html>
