@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ArtDrive</title>
+    <link rel="preload" as="image" href="imagenes/slider2.webp">
     <!-- URL canónica -->
     <link rel="canonical" href="https://sylenci0.github.io/ArtDrive/index.html">
     <!--favicon-->
@@ -40,7 +41,7 @@
         <div class="banner">
             <div class="slides">
                 <div class="slide" onclick="location.href='galeria.html'">
-                    <img src="imagenes/slider2.webp" alt="Dibujo renderizado">
+                    <img src="imagenes/slider2.webp" alt="Dibujo renderizado" loading="eager" fetchpriority="high">
                     <div class="slide-text">
                         <h2>Explora mi universo visual</h2>
                     </div>
