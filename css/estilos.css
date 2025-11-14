@@ -80,9 +80,9 @@ section { text-align: center; }
   background-size: 12rem;
 }
 
-/* #content {
+#content {
   display: none;
-} */
+}
 
 /* HEADER */
 header {
@@ -433,11 +433,11 @@ main {
 }
 
 .parallax-1 {
-  background-image: url('../imagenes/prueba.svg');
+  background-image: url('../imagenes/parallax_img.webp');
 }
 
 .parallax-2 {
-  background-image: url('../imagenes/prueba3.svg');
+  background-image: url('../imagenes/parallax_img2.webp');
   height: fit-content;
 }
 
@@ -446,18 +446,14 @@ main {
 }
 
 .parallax-3 {
-  background-image: url('../imagenes/render2.png');
+  background-image: url('../imagenes/muna.webp');
 }
 
-.parallax-4 {
-  background-image: url('../imagenes/muna.svg');
-}
-
-.parallax-4 .parallax-content h2{
+.parallax-3 .parallax-content h2{
   color: var(--blue--);
 }
 
-.parallax-4 .parallax-content p{
+.parallax-3 .parallax-content p{
   font-family: var(--font-body--);
 }
 
@@ -739,7 +735,6 @@ main {
 
 .blog-entrada h1 {
     font-family: var(--font-body--);
-    font-size: 3.5rem;
     color: var(--purple--);
     text-shadow: 0 0 10px rgba(138, 108, 255, 0.4);
 }
@@ -756,7 +751,6 @@ main {
 .blog-entrada h2 {
     font-family: var(--font-title--);
     color: var(--blue--);
-    font-size: 2rem;
     margin: 3rem 0 1.5rem;
 }
 
@@ -1224,11 +1218,6 @@ footer {
   .parallax {
     margin-left: 0;
     margin-right: 0;
-    background-attachment: scroll;
-  }
-
-  .parallax-2 {
-    height: fit-content;
   }
 
   .parallax-content {
