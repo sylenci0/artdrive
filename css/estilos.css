@@ -226,7 +226,7 @@ nav a:hover {
     max-width: 800px;
 }
 
-.slide-text h2 {
+.slide-text p {
     font-family: var(--font-title--);
     font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 600;
