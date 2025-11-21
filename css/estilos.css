@@ -313,6 +313,7 @@ main {
 }
 
 .categoria h3 {
+  font-size: 1.2rem;
   margin: 1.2rem 0;
   transition: color 0.3s ease;
 }
